@@ -7,10 +7,14 @@
 
 import pickle
 import numpy as np
+import os
 from keras.models import Sequential
 from keras.layers import Dense, Activation, LSTM
 from keras.layers.core import Dense, Activation
 from keras.optimizers import RMSprop
+
+# To silence tf compilation warnings:
+os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
 class Autocomplete:
 
@@ -64,6 +68,7 @@ class Autocomplete:
         # TRY DROPOUT LAYER, TEST WITH DIFFERENT OPTIMIZATION FUNCTIONS,
         # EPOCHS, LEARN RATES AND VALIDATION SPLIT!
         # Add a fully connected layer of length equal to number of unique chars:
+        self.model.add(Activation('relu'))
         self.model.add(Dense(len(self.chars)))
         self.model.add(Activation('softmax'))
         optimizer = RMSprop(lr=0.01)
