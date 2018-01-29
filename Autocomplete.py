@@ -6,8 +6,8 @@
 '''
 
 import pickle
-import numpy as np
 import os
+import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Activation, LSTM
 from keras.layers.core import Dense, Activation
