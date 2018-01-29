@@ -70,7 +70,7 @@ class Autocomplete:
         self.model.compile(loss='categorical_crossentropy',
                            optimizer=optimizer, metrics=['accuracy'])
         history = self.model.fit(features, labels, validation_split=0.05,
-                                 batch_size=128, epochs=1, shuffle=True).history
+                                 batch_size=128, epochs=20, shuffle=True).history
         # save the lstm model for saving time.
         self.model.save('keras_model2.h5')
         pickle.dump(history, open("history2.p", "wb"))
