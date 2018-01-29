@@ -73,7 +73,14 @@ test_sentences = [
     "I want to watch the derby game. Turn on the TV.",
     # This last one is exactly from the training data:
     "he will to overcome an emotion, is ultimately only the will of another, \
-     or of several other, emotions."
+     or of several other, emotions.",
+     "It's raininig, you should actually take your umbrella.",
+     "What kind of music do you listen?",
+     "Nothing makes me afraid of more than spiders.",
+     "I am actually very very very afraid of spiders.",
+     "What does the word noble still mean for us nowadays?",
+     "morning I drank my coffee then read my newspaper",
+     "you're very right, let us be more careful next time"
 ]
 
 
